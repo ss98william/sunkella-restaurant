@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es-PE" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: foco en "comida marina en Huanchaco" y variantes locales -->
+  <title>Comida marina en Huanchaco | Sunkella — Restaurante frente al mar</title>
+  <meta name="description" content="Comida marina en Huanchaco, Trujillo: ceviche, mariscos y cocteles en Sunkella, restaurante en el malecón del balneario. Reserva y vive el sabor del Pacífico." />
+  <meta name="keywords" content="comida marina en Huanchaco, restaurante mariscos Huanchaco, ceviche Huanchaco, mariscos Trujillo, restaurante malecón Huanchaco, cocina marina La Libertad, Sunkella" />
+  <meta name="author" content="Sunkella" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://www.sunkella.pe/" />
+  <meta name="geo.region" content="PE-LIB" />
+  <meta name="geo.placename" content="Huanchaco, Trujillo, Perú" />
+  <meta name="ICBM" content="-8.0800, -79.1200" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sunkella" />
+  <meta property="og:locale" content="es_PE" />
+  <meta property="og:title" content="Comida marina en Huanchaco | Sunkella" />
+  <meta property="og:description" content="Restaurante de comida marina en el balneario de Huanchaco: mariscos, ceviche y carta frente al mar. Reserva en Sunkella." />
+  <meta property="og:url" content="https://www.sunkella.pe/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80" />
+  <meta property="og:image:alt" content="Costa y mar en Huanchaco — ambiente Sunkella" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comida marina en Huanchaco | Sunkella" />
+  <meta name="twitter:description" content="Mariscos, ceviche y experiencias costeras en el malecón de Huanchaco, Trujillo." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80" />
+
+  <!-- Datos estructurados: ayuda a Google a entender el negocio local y la cocina -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.sunkella.pe/#restaurant",
+    "name": "Sunkella",
+    "alternateName": "Sunkella Huanchaco",
+    "description": "Restaurante de comida marina en Huanchaco, Trujillo. Ceviche, mariscos a la brasa, cocteles y carta con producto del día frente al Pacífico.",
+    "url": "https://www.sunkella.pe/",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+    "telephone": "+51-900-000-000",
+    "email": "hola@sunkella.pe",
+    "priceRange": "$$",
+    "servesCuisine": ["Marina", "Mariscos", "Cocina peruana costeña", "Cevichería"],
+    "acceptsReservations": true,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Malecón Grau s/n",
+      "addressLocality": "Huanchaco",
+      "addressRegion": "La Libertad",
+      "addressCountry": "PE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -8.0800,
+      "longitude": -79.1200
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Huanchaco"
+    },
+    "sameAs": [],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "12:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Tailwind primero; luego Lucide; luego script.js (define tailwind.config antes del render) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body class="font-sans text-ocean-900 bg-sand-50 antialiased">
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-sand-200/80 bg-sand-50/90 backdrop-blur-md transition-base">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8" aria-label="Principal">
+      <a href="#inicio" class="group flex items-center gap-2 transition-base hover:opacity-90">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-ocean-900 text-lg font-display font-bold text-sand-50 shadow-soft ring-2 ring-coral/30 transition-base group-hover:ring-coral/60">S</span>
+        <span class="font-display text-2xl font-semibold tracking-tight text-ocean-900 sm:text-[1.65rem]">Sunkella</span>
+      </a>
+
+      <ul class="hidden items-center gap-8 text-sm font-medium text-ocean-800 md:flex">
+        <li><a href="#inicio" class="transition-base hover:text-coral">Inicio</a></li>
+        <li><a href="#menu" class="transition-base hover:text-coral">Menú</a></li>
+        <li><a href="#nosotros" class="transition-base hover:text-coral">Nosotros</a></li>
+        <li><a href="#contacto" class="transition-base hover:text-coral">Contacto</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="#reservar" class="hidden rounded-full bg-coral px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-base hover:bg-coral-dark hover:shadow-lift sm:inline-flex sm:items-center sm:gap-2">
+          <i data-lucide="calendar-check" class="h-4 w-4" aria-hidden="true"></i>
+          Reservar
+        </a>
+
+        <button type="button" id="nav-toggle" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-sand-300 bg-white text-ocean-900 transition-base hover:border-coral/40 hover:bg-sand-100 md:hidden" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">
+          <i data-lucide="menu" class="h-5 w-5 menu-icon" aria-hidden="true"></i>
+          <i data-lucide="x" class="close-icon hidden h-5 w-5" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="hidden border-t border-sand-200 bg-sand-50 px-4 py-4 md:hidden" hidden>
+      <ul class="flex flex-col gap-1 text-base font-medium text-ocean-800">
+        <li><a href="#inicio" class="block rounded-lg px-3 py-3 transition-base hover:bg-sand-100">Inicio</a></li>
+        <li><a href="#menu" class="block rounded-lg px-3 py-3 transition-base hover:bg-sand-100">Menú</a></li>
+        <li><a href="#nosotros" class="block rounded-lg px-3 py-3 transition-base hover:bg-sand-100">Nosotros</a></li>
+        <li><a href="#contacto" class="block rounded-lg px-3 py-3 transition-base hover:bg-sand-100">Contacto</a></li>
+      </ul>
+      <a href="#reservar" class="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-coral py-3.5 text-sm font-semibold text-white transition-base hover:bg-coral-dark">
+        <i data-lucide="calendar-check" class="h-4 w-4" aria-hidden="true"></i>
+        Reservar
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="relative min-h-[100svh] overflow-hidden pt-[4.5rem]">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
+          alt="Vista costera con arena y mar al atardecer, ambiente del balneario de Huanchaco"
+          class="h-full w-full object-cover object-center"
+          width="2000"
+          height="1333"
+          fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-ocean-950/75 via-ocean-900/55 to-ocean-950/85" aria-hidden="true"></div>
+      </div>
+
+      <div class="relative z-10 mx-auto flex min-h-[calc(100svh-4.5rem)] max-w-6xl flex-col justify-center px-4 pb-16 pt-10 sm:px-6 lg:px-8">
+        <p class="mb-3 inline-flex max-w-max items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-sand-100 backdrop-blur-sm sm:text-sm">
+          <i data-lucide="anchor" class="h-3.5 w-3.5 text-coral-light" aria-hidden="true"></i>
+          Huanchaco · Trujillo
+        </p>
+        <h1 class="max-w-4xl font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[3.75rem]">
+          Sabor Marino en el Corazón de Huanchaco
+        </h1>
+        <p class="mt-6 max-w-xl text-base leading-relaxed text-sand-100 sm:text-lg">
+          Cocina costera contemporánea, producto del día y una mesa que mira al Pacífico. Bienvenido a Sunkella.
+        </p>
+        <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <a href="#menu" class="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-3.5 text-sm font-semibold text-white shadow-lift transition-base hover:bg-coral-dark hover:scale-[1.02] active:scale-[0.98]">
+            <i data-lucide="utensils-crossed" class="h-4 w-4" aria-hidden="true"></i>
+            Ver Menú
+          </a>
+          <a href="#nosotros" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-base hover:bg-white/20">
+            <i data-lucide="waves" class="h-4 w-4" aria-hidden="true"></i>
+            Conócenos
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 md:block" aria-hidden="true">
+        <div class="flex h-10 w-6 justify-center rounded-full border border-white/30 pt-2">
+          <span class="h-2 w-1 animate-bounce rounded-full bg-white/70"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="border-b border-sand-200 bg-white py-14 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
+            <h2 class="font-display text-3xl font-semibold text-ocean-900 sm:text-4xl">Nosotros</h2>
+            <p class="mt-4 text-ocean-800/90 leading-relaxed">
+              Sunkella nace del encuentro entre la tradición pesquera de Huanchaco y una cocina abierta al mar. Seleccionamos ingredientes de cercanía, respetamos la temporada y servimos cada plato con la calidez del norte peruano.
+            </p>
+            <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+              <li class="flex gap-3 rounded-xl border border-sand-200 bg-sand-50 p-4">
+                <i data-lucide="leaf" class="mt-0.5 h-5 w-5 shrink-0 text-coral" aria-hidden="true"></i>
+                <span class="text-sm text-ocean-800/85">Producto fresco y trazable cada día.</span>
+              </li>
+              <li class="flex gap-3 rounded-xl border border-sand-200 bg-sand-50 p-4">
+                <i data-lucide="heart-handshake" class="mt-0.5 h-5 w-5 shrink-0 text-coral" aria-hidden="true"></i>
+                <span class="text-sm text-ocean-800/85">Equipo local y hospitalidad costera.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="relative aspect-[4/3] overflow-hidden rounded-2xl border border-sand-200 shadow-soft">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80"
+              alt="Ambiente de restaurante costero con mesas iluminadas"
+              class="h-full w-full object-cover"
+              width="900"
+              height="675"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/50 to-transparent" aria-hidden="true"></div>
+            <p class="absolute bottom-4 left-4 right-4 font-display text-lg text-white drop-shadow-md sm:text-xl">Huanchaco · Donde el mar inspira la carta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="especialidad" class="border-b border-sand-200 bg-sand-50 py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-display text-3xl font-semibold text-ocean-900 sm:text-4xl">Nuestra Especialidad</h2>
+          <p class="mt-4 text-ocean-800/80">Tres firmas que definen nuestra carta y el espíritu del litoral trujillano.</p>
+        </div>
+
+        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-2xl border border-sand-200 bg-white shadow-soft transition-base hover:border-coral/25 hover:shadow-lift">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Plato de ceviche con limón y hierbas" class="h-full w-full object-cover transition-base duration-500 group-hover:scale-105" width="800" height="600" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <div class="mb-2 flex items-center gap-2 text-coral">
+                <i data-lucide="fish" class="h-5 w-5" aria-hidden="true"></i>
+                <span class="text-xs font-semibold uppercase tracking-wider">Firma</span>
+              </div>
+              <h3 class="font-display text-2xl font-semibold text-ocean-900">Ceviche Clásico</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ocean-800/85">Pescado del día, leche de tigre cítrica y el punto justo de ají limo.</p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-2xl border border-sand-200 bg-white shadow-soft transition-base hover:border-coral/25 hover:shadow-lift">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Mariscos a la parrilla con hierbas" class="h-full w-full object-cover transition-base duration-500 group-hover:scale-105" width="800" height="600" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <div class="mb-2 flex items-center gap-2 text-coral">
+                <i data-lucide="flame" class="h-5 w-5" aria-hidden="true"></i>
+                <span class="text-xs font-semibold uppercase tracking-wider">Brasa</span>
+              </div>
+              <h3 class="font-display text-2xl font-semibold text-ocean-900">Mariscos a la Brasa</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ocean-800/85">Humo suave, mantequilla de hierbas del norte y textura perfecta.</p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-2xl border border-sand-200 bg-white shadow-soft transition-base hover:border-coral/25 hover:shadow-lift sm:col-span-2 lg:col-span-1">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Cócteles coloridos en copas elegantes" class="h-full w-full object-cover transition-base duration-500 group-hover:scale-105" width="800" height="600" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <div class="mb-2 flex items-center gap-2 text-coral">
+                <i data-lucide="wine" class="h-5 w-5" aria-hidden="true"></i>
+                <span class="text-xs font-semibold uppercase tracking-wider">Bar</span>
+              </div>
+              <h3 class="font-display text-2xl font-semibold text-ocean-900">Cocteles de Autor</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ocean-800/85">Destilados premium, frutas locales y el toque salado de la costa.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="bg-gradient-to-b from-sand-100 to-sand-50 py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="font-display text-3xl font-semibold text-ocean-900 sm:text-4xl">Menú Digital</h2>
+            <p class="mt-2 max-w-xl text-ocean-800/85">Explora nuestra carta por categorías. Inspirado en la claridad de los catálogos digitales profesionales.</p>
+          </div>
+          <p class="text-xs font-medium uppercase tracking-wider text-ocean-700/70">Powered by experiencia WS Tech Solutions</p>
+        </div>
+
+        <div class="mt-10 overflow-hidden rounded-2xl border border-sand-200 bg-white shadow-soft">
+          <div class="border-b border-sand-200 bg-sand-50/80 px-3 pt-3 sm:px-5 sm:pt-5" role="tablist" aria-label="Categorías del menú">
+            <div class="flex flex-wrap gap-2 sm:gap-3">
+              <button type="button" role="tab" id="tab-entradas" aria-selected="true" aria-controls="panel-entradas" class="menu-tab flex flex-1 min-w-[calc(33.333%-0.5rem)] items-center justify-center gap-2 rounded-t-xl border border-transparent bg-white px-3 py-3 text-sm font-semibold text-ocean-900 shadow-sm transition-base sm:flex-none sm:px-6">
+                <i data-lucide="salad" class="h-4 w-4 text-coral" aria-hidden="true"></i>
+                Entradas
+              </button>
+              <button type="button" role="tab" id="tab-fondo" aria-selected="false" aria-controls="panel-fondo" tabindex="-1" class="menu-tab flex flex-1 min-w-[calc(33.333%-0.5rem)] items-center justify-center gap-2 rounded-t-xl border border-transparent px-3 py-3 text-sm font-semibold text-ocean-700/90 transition-base hover:bg-white/60 sm:flex-none sm:px-6">
+                <i data-lucide="chef-hat" class="h-4 w-4" aria-hidden="true"></i>
+                Platos de Fondo
+              </button>
+              <button type="button" role="tab" id="tab-bebidas" aria-selected="false" aria-controls="panel-bebidas" tabindex="-1" class="menu-tab flex flex-1 min-w-[calc(33.333%-0.5rem)] items-center justify-center gap-2 rounded-t-xl border border-transparent px-3 py-3 text-sm font-semibold text-ocean-700/90 transition-base hover:bg-white/60 sm:flex-none sm:px-6">
+                <i data-lucide="glass-water" class="h-4 w-4" aria-hidden="true"></i>
+                Bebidas
+              </button>
+            </div>
+          </div>
+
+          <div class="p-5 sm:p-8">
+            <div id="panel-entradas" role="tabpanel" aria-labelledby="tab-entradas" class="menu-panel grid gap-4 sm:grid-cols-2">
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Tiradito Nikkei</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Salsa tigers milk, sésamo y brotes.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 38</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Causa Limeña de Pulpo</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Capas de papa amarilla y olivo.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 42</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Chicharrón Mixto</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Pescado y mariscos, yuca dorada.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 45</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Conchas a la Parmesana</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Gratinado dorado, limón.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 48</span>
+              </div>
+            </div>
+
+            <div id="panel-fondo" role="tabpanel" aria-labelledby="tab-fondo" class="menu-panel hidden grid gap-4 sm:grid-cols-2">
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Arroz con Mariscos</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Caldo concentrado, chicha de jora.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 58</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Pescado a la Tallarin</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Salsa norteña, tallarines al wok.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 62</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Sudado de Mejillones</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Chicha, cilantro y pan artesanal.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 55</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Lomo Saltado Mar y Tierra</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Versión Sunkella con langostinos.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 68</span>
+              </div>
+            </div>
+
+            <div id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" class="menu-panel hidden grid gap-4 sm:grid-cols-2">
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Chilcano Sunkella</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Pisco, ginger, limón y toque marino.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 28</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Limonada Hierba Luisa</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Fresca, sin alcohol.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 14</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Cerveza Artesanal Trujillo</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Selección rotativa.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 18</span>
+              </div>
+              <div class="flex items-start justify-between gap-4 rounded-xl border border-sand-100 bg-sand-50/50 p-4 transition-base hover:border-coral/20">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ocean-900">Vino Blanco — Copa</h3>
+                  <p class="mt-1 text-sm text-ocean-800/75">Maridaje recomendado con ceviche.</p>
+                </div>
+                <span class="shrink-0 rounded-lg bg-ocean-900 px-2.5 py-1 text-xs font-bold text-sand-50">S/ 24</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservar" class="border-t border-sand-200 bg-white py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-12">
+          <div>
+            <h2 class="font-display text-3xl font-semibold text-ocean-900 sm:text-4xl">Ubicación y Horarios</h2>
+            <p class="mt-3 text-ocean-800/85">Estamos en el malecón del balneario de Huanchaco, a pasos de los caballitos de totora.</p>
+
+            <ul class="mt-8 space-y-4">
+              <li class="flex gap-3">
+                <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sand-100 text-coral">
+                  <i data-lucide="map-pin" class="h-5 w-5" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <p class="font-semibold text-ocean-900">Dirección</p>
+                  <p class="text-sm text-ocean-800/85">Malecón Grau s/n, Huanchaco, La Libertad — Perú</p>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sand-100 text-coral">
+                  <i data-lucide="clock" class="h-5 w-5" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <p class="font-semibold text-ocean-900">Horario de atención</p>
+                  <p class="text-sm text-ocean-800/85">Lun — Jue: 12:00 — 22:00</p>
+                  <p class="text-sm text-ocean-800/85">Vie — Dom: 12:00 — 23:00</p>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sand-100 text-coral">
+                  <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <p class="font-semibold text-ocean-900">Teléfono</p>
+                  <a href="tel:+51900000000" class="text-sm text-coral-dark underline-offset-2 transition-base hover:underline">+51 900 000 000</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="overflow-hidden rounded-2xl border border-sand-200 bg-sand-100 shadow-soft">
+            <div class="relative aspect-[16/11] w-full min-h-[220px]">
+              <iframe
+                title="Mapa aproximado de Huanchaco — reemplazar con embed real de Google Maps"
+                class="absolute inset-0 h-full w-full grayscale-[20%] contrast-[1.05]"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-79.1250%2C-8.0650%2C-79.1050%2C-8.0750&amp;layer=mapnik"
+              ></iframe>
+              <div class="pointer-events-none absolute inset-0 flex items-center justify-center bg-ocean-950/0">
+                <span class="sr-only">Mapa interactivo de la zona de Huanchaco</span>
+              </div>
+            </div>
+            <p class="border-t border-sand-200 bg-sand-50 px-4 py-3 text-center text-xs text-ocean-700/80">Placeholder de mapa · Sustituye por tu URL de Google Maps Business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="border-t border-sand-200 bg-ocean-950 text-sand-100">
+    <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 font-display text-xl font-bold text-white">S</span>
+            <span class="font-display text-2xl font-semibold">Sunkella</span>
+          </div>
+          <p class="mt-4 max-w-md text-sm leading-relaxed text-sand-200/90">Experiencias marinas en Huanchaco. Reservas, eventos privados y celebraciones frente al mar.</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-sand-300">Contacto</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="mail" class="mt-0.5 h-4 w-4 shrink-0 text-coral-light" aria-hidden="true"></i>
+              <a href="mailto:hola@sunkella.pe" class="transition-base hover:text-white">hola@sunkella.pe</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="mt-0.5 h-4 w-4 shrink-0 text-coral-light" aria-hidden="true"></i>
+              <span>Huanchaco, Trujillo</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-sand-300">Síguenos</h3>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-base hover:border-coral/50 hover:bg-white/10" aria-label="Instagram">
+              <i data-lucide="instagram" class="h-5 w-5" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-base hover:border-coral/50 hover:bg-white/10" aria-label="Facebook">
+              <i data-lucide="facebook" class="h-5 w-5" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-base hover:border-coral/50 hover:bg-white/10" aria-label="TikTok">
+              <i data-lucide="music-2" class="h-5 w-5" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-sand-300 sm:flex-row">
+        <p>© <span id="year"></span> Sunkella. Todos los derechos reservados.</p>
+        <a href="#inicio" class="inline-flex items-center gap-1 text-sand-200 transition-base hover:text-white">
+          Volver arriba
+          <i data-lucide="arrow-up" class="h-3.5 w-3.5" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    id="whatsapp-float"
+    href="#"
+    class="whatsapp-float fixed bottom-5 right-5 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lift transition-base hover:scale-105 hover:bg-[#20bd5a] sm:bottom-8 sm:right-8 sm:h-16 sm:w-16"
+    aria-label="Reservar por WhatsApp Business"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i data-lucide="message-circle" class="h-7 w-7 sm:h-8 sm:w-8" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
